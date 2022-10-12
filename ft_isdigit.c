@@ -1,24 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: panoma <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/28 06:21:12 by panoma            #+#    #+#             */
-/*   Updated: 2022/10/12 03:21:16 by panoma           ###   ########.fr       */
+/*   Created: 2022/10/12 03:06:19 by panoma            #+#    #+#             */
+/*   Updated: 2022/10/12 03:10:19 by panoma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
-
-# include <unistd.h>
-# include <stdlib.h>
-
-/* Mendatory Part 1 */
-
-int	ft_isalpha(int c);
-int	ft_isdigit(int c);
-
-#endif
+int	ft_isdigit(int c)
+{
+	if (c >= '0' && c <= '9')
+		return (1);
+	return (0);
+}
