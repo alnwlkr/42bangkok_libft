@@ -6,14 +6,19 @@
 #    By: panoma <marvin@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/12 02:56:01 by panoma            #+#    #+#              #
-#    Updated: 2022/10/12 03:03:24 by panoma           ###   ########.fr        #
+#    Updated: 2022/11/08 03:13:16 by panoma           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 FLAGS = -Wall -Wextra -Werror
 NAME = libft.a
-SRCS = ft_isalpha.c\
-ft_isdigit.c
+SRCS = ft_isascii.c \
+		ft_isalnum.c \
+		ft_isalpha.c \
+		ft_isdigit.c \
+		ft_isprint.c \
+		ft_tolower.c \
+		ft_toupper.c 
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
