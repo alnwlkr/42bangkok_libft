@@ -6,7 +6,7 @@
 /*   By: panoma <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/20 17:43:39 by panoma            #+#    #+#             */
-/*   Updated: 2022/12/22 16:13:42 by panoma           ###   ########.fr       */
+/*   Updated: 2022/12/25 00:35:00 by panoma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,4 +93,15 @@ char	**ft_split(char const *s, char c)
 	}
 	words[i] = '\0';
 	return (words);
+}
+
+int	main(void)
+{
+	char	*s1 = "    stylist boo boo";
+	char	c = " ";
+	char	**res;
+	int		i = 0;
+	int		j = 0;
+
+	res = ft_split(s1, c);
 }
