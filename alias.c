@@ -1,0 +1,8 @@
+alias gww='gcc -Wall -Wextra -Werror'
+alias normf='norminette -R CheckForbiddenSourceHeader ft*.c && norminette -R CheckDefine *.h'
+alias mkcd='{ IFS= read -r d && mkdir "$d" && cd "$d"; } <<<'
+alias lc='ls -l *.c'
+alias wtest='bash ~/42Cursus/libft-war-machine/grademe.sh'
+alias ..='cd ..'
+alias libft='cd ~/42Cursus/libft'
+alias gg='{ IFS= read -r d && git add -A && git commit -m "$d" && git push; } <<<'
