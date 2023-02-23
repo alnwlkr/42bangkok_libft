@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: panoma <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: panoma <panoma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/19 15:46:26 by panoma            #+#    #+#             */
-/*   Updated: 2022/12/19 17:43:36 by panoma           ###   ########.fr       */
+/*   Updated: 2023/02/22 18:03:49 by panoma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	i = 0;
 	while (s[start] && i < len)
-	{	
+	{
 		sub[i] = s[start];
 		i++;
 		start++;

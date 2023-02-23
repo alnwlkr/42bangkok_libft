@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: panoma <marvin@student.42.fr>              +#+  +:+       +#+         #
+#    By: panoma <panoma@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/12 02:56:01 by panoma            #+#    #+#              #
-#    Updated: 2022/12/19 21:49:34 by panoma           ###   ########.fr        #
+#    Updated: 2023/02/16 15:56:29 by panoma           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,16 @@ SRCS = ft_isascii.c \
 		ft_calloc.c \
 		ft_strdup.c \
 		ft_substr.c \
-		ft_strjoin.c
+		ft_strjoin.c \
+		ft_strtrim.c \
+		ft_split.c \
+		ft_itoa.c \
+		ft_strmapi.c \
+		ft_striteri.c \
+		ft_putchar_fd.c \
+		ft_putstr_fd.c \
+		ft_putendl_fd.c \
+		ft_putnbr_fd.c
 
 OBJS = $(SRCS:.c=.o)
 

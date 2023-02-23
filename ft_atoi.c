@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: panoma <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: panoma <panoma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/16 11:52:56 by panoma            #+#    #+#             */
-/*   Updated: 2022/12/19 21:51:26 by panoma           ###   ########.fr       */
+/*   Updated: 2023/02/22 19:52:38 by panoma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@ int	ft_atoi(const char *str)
 	i = 0;
 	sym = 1;
 	result = 0;
-	if (!str)
-		return (0);
 	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
 		i++;
 	if (str[i] == '-')

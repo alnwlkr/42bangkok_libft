@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: panoma <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: panoma <panoma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/16 00:44:08 by panoma            #+#    #+#             */
-/*   Updated: 2022/12/16 01:59:10 by panoma           ###   ########.fr       */
+/*   Updated: 2023/02/22 19:48:49 by panoma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	i;
 	size_t	ndlen;
 
-	if (!needle || *needle == 0)
+	if (*needle == 0)
 	{
 		return ((char *) haystack);
 	}
@@ -34,16 +34,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-/*
-#include <string.h>
-#include <stdio.h>
-
-int	main(void)
-{
-	const char *s1 = "Hello, World!";
-	const char *s2 = NULL;
-	printf("%s\n", ft_strnstr(s1, s2, 12));
-	//printf("%s\n", (char *) (strnstr(s1, s2, 12)));
-	return (0);
-}
-*/
