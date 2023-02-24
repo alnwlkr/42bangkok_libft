@@ -1,22 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter_bonus.c                                 :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: panoma <panoma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/24 21:00:10 by panoma            #+#    #+#             */
-/*   Updated: 2023/02/24 21:35:08 by panoma           ###   ########.fr       */
+/*   Created: 2023/02/24 20:52:28 by panoma            #+#    #+#             */
+/*   Updated: 2023/02/25 01:40:35 by panoma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	while (lst && f)
+	t_list	*temp;
+
+	if (!lst)
+		return ;
+	while (lst && *lst)
 	{
-		f(lst->content);
-		lst = lst->next;
+		temp = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		*lst = temp;
 	}
+	*lst = NULL;
 }
