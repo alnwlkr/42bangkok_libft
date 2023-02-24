@@ -6,7 +6,7 @@
 #    By: panoma <panoma@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/12 02:56:01 by panoma            #+#    #+#              #
-#    Updated: 2023/02/16 15:56:29 by panoma           ###   ########.fr        #
+#    Updated: 2023/02/24 22:03:11 by panoma           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,7 +47,18 @@ SRCS = ft_isascii.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c
 
+B_SRCS = ft_lstnew_bonus.c \
+		ft_lstadd_front_bonus.c \
+		ft_lstsize_bonus.c \
+		ft_lstlast_bonus.c \
+		ft_lstadd_back_bonus.c \
+		ft_lstdelone_bonus.c \
+		ft_lstclear_bonus.c \
+		ft_lstiter_bonus.c \
+		ft_lstmap_bonus.c
+
 OBJS = $(SRCS:.c=.o)
+B_OBJS = $(B_SRCS:.c=.o)
 
 all: $(NAME)
 
@@ -57,12 +68,15 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	ar -rcs $(NAME) $(OBJS)
 
+bonus: $(NAME) $(B_OBJS)
+	ar -rcs $(NAME) $(B_OBJS)
+
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) $(B_OBJS)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
-.PHONY: clean fclean all re
+.PHONY: clean fclean all re bonus

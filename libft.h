@@ -6,7 +6,7 @@
 /*   By: panoma <panoma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 06:21:12 by panoma            #+#    #+#             */
-/*   Updated: 2023/02/22 19:55:50 by panoma           ###   ########.fr       */
+/*   Updated: 2023/02/24 21:50:28 by panoma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,7 @@
 
 # include <unistd.h>
 # include <stdlib.h>
-# include <stdio.h>
-# include <string.h>
+
 
 /* Mendatory Part 1 */
 
